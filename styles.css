@@ -14,7 +14,7 @@ body{
 }
 
 .container{
-    padding: 40px 0;
+    padding: 40px 56px;
 }
 
 .row{
@@ -195,7 +195,7 @@ header{
 
 .movie__poster{
     max-width: 500px;
-    height: 400px;
+    max-height: 600px;
     width: 100%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     transition: all 300ms ease;
@@ -204,6 +204,7 @@ header{
 .movie__poster:hover{
     cursor: pointer;
     transform: scale(1.03);
+    filter: brightness(80%)
 }
 
 .movie__title{
@@ -216,7 +217,7 @@ header{
 */
 
 .new__poster{
-    height: 600px;
+    max-height: 600px;
 }
 
 .movie__header{
@@ -239,6 +240,10 @@ header{
 
 .right__section, .left__section{
     width: 50%;
+}
+
+.left__section{
+    margin-right: 64px;
 }
 
 .summary{
@@ -285,6 +290,103 @@ header{
     justify-content: center;
     align-items: center;
     margin-top: 12px;
+ }
+
+ /* 
+    Large Tablets
+  */
+
+  @media (max-width: 880px){
+    .movie{
+        width: calc(100% / 3);
+    }
+  }
+
+ /* 
+    SMART PHONES AND TABLETS
+ */
+
+ @media (max-width: 768px){
+    .search__btn{
+        padding: 24px 56px;
+        font-size: 24px;
+    }
+
+    .magnify__search{
+        font-size: 48px;
+    }
+
+    .nav__left{
+        font-size: 48px;
+    }
+
+    .movie{
+        width: calc(100% / 2);
+    }
+ }
+
+ /* 
+    SMART PHONES
+ */
+
+ @media (max-width: 580px){
+    .container{
+        padding: 40px 32px;
+    }
+
+    .nav__anchor{
+        display: none;
+    }
+
+    .search__btn{
+        padding: 24px 48px 24px 20px;
+    }
+
+ }
+
+ @media (max-width: 450px){
+    .movie__poster{
+        height: 240px;
+        max-width: 300px;
+    }
+
+    .movie__container{
+        padding: 32px 12px;
+    }
+
+    .new__poster{
+        max-width: 200px;
+        height: 200px
+    }
+
+    .summary{
+        font-size: 20px;
+    }
+ }
+
+ @media (max-width: 400px){
+    .movie{
+        width: calc(100%);
+        margin-bottom: 24px;
+    }
+
+    .movie__container{
+        padding: 32px 32px;
+    }
+
+    .magnify__search{
+        font-size: 32px;
+    }
+
+    .summary{
+        font-size: 18px;
+    }
+ }
+
+ @media (max-width: 360px){
+    .search__btn{
+        font-size: 20px;
+    }
  }
 
 
