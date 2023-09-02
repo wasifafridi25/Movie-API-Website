@@ -63,33 +63,6 @@ function displayMovies(movieArray) {
     }, 1200);
 }
 
-
-
-// async function renderMovie(filterValue){
-//     setTimeout(() => {
-//     loading.classList.add("movie__loading")
-//     }, 500);
-//     movieList.style.visibility = 'hidden'    
-//     const movie = await fetch(`https://www.omdbapi.com/?apikey=e43bdcdf&s=${searchValue}`);
-//     const movieData = await movie.json();
-//     let movieArray = movieData.Search;
-
-//     if (filterValue === 'New To Old'){
-//         movieArray.sort((a, b) => b.Year - a.Year)
-//     }
-
-//     else if (filterValue === 'Old To New'){
-//         movieArray.sort((a, b) => a.Year - b.Year)
-//     }
-
-//     setTimeout(() => {
-//         loading.classList.remove("movie__loading")
-//         movieList.innerHTML = movieArray.map((movie) => movieHTML(movie)).join("");
-//         movieList.style.visibility = 'visible'    
-//     }, 1200);
-
-// }
-
 search.addEventListener('change', (e)=> {
     searchValue = e.target.value;
     if (searchValue === ''){
