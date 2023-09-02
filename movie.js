@@ -14,6 +14,7 @@ async function main(imdb) {
 
 main(imdb);
 
+// Generates HTML for the summary a movie.
 function movieHTML(movieData) {
   return `
     <div class="left__section">
