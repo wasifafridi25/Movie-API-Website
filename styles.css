@@ -33,6 +33,25 @@ a{
     text-decoration: none;
 }
 
+.toggleContrast .search__results,
+.toggleContrast .toggle,
+.toggleContrast .movie__title,
+.toggleContrast .movie__year{
+    color: white;
+}
+
+.toggleContrast main{
+    background-color: black;
+}
+
+main, 
+.search__results,
+.toggle,
+.movie__title,
+.movie__year{
+    transition: all 900ms ease;
+}
+
 /* 
     NAVBAR 
 */
@@ -136,6 +155,19 @@ header{
     justify-content: space-between;
  }
 
+ .search__left{
+    display: flex;
+    align-items: center;
+ }
+
+ .search__results{
+    margin-left: 16px;
+ }
+
+ .toggle{
+    cursor: pointer;
+ }
+
  #filter{
     display: none;
  }
@@ -218,6 +250,7 @@ header{
 
 .new__poster{
     max-height: 600px;
+    cursor: not-allowed !important;
 }
 
 .movie__header{

@@ -3,7 +3,9 @@ const search = document.querySelector(".search__btn");
 const searchResults = document.querySelector(".search__results");
 const loading = document.querySelector(".loading");
 const filter = document.querySelector("#filter");
+const toggle = document.querySelector(".toggle")
 let searchValue = '';
+let isToggle = false;
 
 async function renderMovie(filterValue) {
     showLoading();
@@ -114,4 +116,15 @@ function movieHTML(movie){
         </div>
     `
 }
+
+toggle.addEventListener('click', () => {
+    isToggle = !isToggle
+    if (isToggle){
+        document.body.classList.add("toggleContrast")
+    }
+    else{
+        document.body.classList.remove("toggleContrast")
+    }
+
+})
 
