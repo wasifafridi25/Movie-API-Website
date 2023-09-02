@@ -59,6 +59,7 @@ function movieHTML(movieData) {
     </div>`;
 }
 
+//generate the ratings dynamically
 function ratingHTML(rating) {
   let ratings = "";
   if (rating.toString().endsWith(".0")) {
