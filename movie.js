@@ -75,6 +75,7 @@ function ratingHTML(rating) {
   return ratings;
 }
 
+// Event listener for the toggle button to change the contrast.
 toggle.addEventListener("click", () => {
   isToggle = !isToggle;
   if (isToggle) {
