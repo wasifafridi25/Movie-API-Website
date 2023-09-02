@@ -27,12 +27,6 @@ a{
     text-decoration: none;
 }
 
-/* img{
-    width: 100%;
-    max-width: 300px;
-} */
-
-
 /* 
     NAVBAR 
 */
@@ -194,8 +188,6 @@ header{
     color: #242424;
 }
 
-
-
 .plot {
     font-style: italic;
     font-weight: 400;
@@ -219,3 +211,39 @@ header{
 .ratings{
     color: goldenrod;
 }
+
+/* 
+    LOADING STATE
+ */
+
+ .movie__loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: blueviolet;
+    margin: 0 auto;
+ }
+
+ .movie__loading--spinner{
+    animation: rotate 600ms infinite linear;
+ }
+
+ @keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+ }
+
+ .movie__loading--spinner{
+    display: none !important;
+ }
+
+ .movie__loading .movie__loading--spinner{
+    display: block !important; 
+ }
+
+

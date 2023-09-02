@@ -3,10 +3,16 @@ const search = document.querySelector(".search__btn");
 const searchResults = document.querySelector(".search__results");
 
 async function main(searchValue){
+    movieList.classList.add("movie__loading")
+
     const movie = await fetch(`https://www.omdbapi.com/?apikey=e43bdcdf&s=${searchValue}`);
     const movieData = await movie.json();
-    console.log(movieData.Search);
+
+    movieList.classList.remove("movie__loading")
+
     movieList.innerHTML = movieData.Search.map((movie) => movieHTML(movie)).join("");
+
+
     
 }
 
