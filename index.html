@@ -5,7 +5,10 @@
     <title>Cinemate Universe</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./index.js" defer></script>
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -21,49 +24,52 @@
           <nav>
             <h1 class="nav__left bolder">Cinemate Universe</h1>
             <div class="nav__right">
-                <ul>
-                    <li class="bolder"><span class="nav__anchor">Home</span></li>
-                    <li class="bolder"><span class="nav__anchor">Browse Movies</span></li>
-                </ul>
+              <ul>
+                <li class="bolder"><span class="nav__anchor">Home</span></li>
+                <li class="bolder">
+                  <span class="nav__anchor">Browse Movies</span>
+                </li>
+              </ul>
             </div>
           </nav>
           <div class="search">
-            <input type="text" class="search__btn" placeholder="Search Movies">
+            <input
+              type="text"
+              class="search__btn"
+              placeholder="Search Movies"
+            />
             <button class="magnify">
-                <i class="fa-solid fa-magnifying-glass magnify__search"></i>
+              <i class="fa-solid fa-magnifying-glass magnify__search"></i>
             </button>
           </div>
-          
         </div>
       </div>
     </header>
     <main>
-        <div class="container movie__container">
-            <div class="row">
-                <div class="search__sort">
-                    <div class="search__left">
-                        <i class="fas fa-adjust toggle"></i>
-                        <h2 class="search__results">Search Results For: </h2>
-                    </div>
-                    <div class="sort">
-                        <select name="" id="filter">
-                            <option value="Sort" selected disabled>Sort</option>
-                            <option value="New To Old">New To Old</option>
-                            <option value="Old To New">Old To New</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="loading">
-                    <i class="fas fa-spinner movie__loading--spinner"></i>
-                </div>
-                <div class="movies">
-                    
-                </div>
+      <div class="container movie__container">
+        <div class="row">
+          <div class="search__sort">
+            <div class="search__left">
+              <i class="fas fa-adjust toggle"></i>
+              <h2 class="search__results">Search Results For:</h2>
             </div>
+            <div class="sort">
+              <select name="" id="filter">
+                <option value="Sort" selected disabled>Sort</option>
+                <option value="New To Old">New To Old</option>
+                <option value="Old To New">Old To New</option>
+              </select>
+            </div>
+          </div>
+          <div class="loading">
+            <i class="fas fa-spinner movie__loading--spinner"></i>
+          </div>
+          <div class="movies"></div>
         </div>
+      </div>
     </main>
     <footer>
-        <p class="footer__para">Copyright &copy; Bhuiyan Shadman Wasif, 2023</p>
+      <p class="footer__para">Copyright &copy; Bhuiyan Shadman Wasif, 2023</p>
     </footer>
   </body>
 </html>
